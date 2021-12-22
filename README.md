@@ -1,5 +1,5 @@
 # Node.JS 24/7 Project Hoster
-### This code is only compatible for node.js. For python, [click me]()!
+### This code is only compatible for node.js. For python, [click me](https://github.com/ItzSidhan/Python-Project-Hoster)!
 <br>
 
 ## Applying
