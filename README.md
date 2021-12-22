@@ -30,11 +30,14 @@ npm install express
 Run the repl, and copy the web address you see top right corner. And go to [UptimeRobot](https://uptimerobot.com/) and host your web address.
 
 <br>
+</br>
 
 # Python
 
 <br>
-Open your main repl file (example: main.py etc...) and add keep_alive to import line. Now create a new file named keep_alive.py, then paste this script below:
+</br>
+
+Open your main repl file (example: main.py etc...) and add `keep_alive` to import line. Now create a new file named `keep_alive.py`, then paste this script below:
 ```
 from flask import Flask
 from threading import Thread
