@@ -1,10 +1,8 @@
-# 24/7 Hosting Script
-### You can now host your repl on repl.it 24/7 without hacker plan!
+# Node.JS 24/7 Project Hoster
+### This code is only compatible for node.js. For python, [click me]()!
 <br>
 
-# Node.JS (python below)
-
-<br>
+## Applying
 Open your main repl file (example: index.js, app.js, main.js etc...) and leave a space at the very top of the file, and paste this code in:
 <br>
 </br>
@@ -31,36 +29,6 @@ Run the repl, and copy the web address you see top right corner. And go to [Upti
 
 <br>
 </br>
-
-# Python
-
-<br>
-</br>
-
-Open your main repl file (example: main.py etc...) and add `keep_alive` to import line. Now create a new file named `keep_alive.py`, then paste this script below:
-```
-from flask import Flask
-from threading import Thread
-
-app = Flask('')
-
-@app.route('/')
-def main():
-    return '<meta http-equiv="refresh" content="0; URL=https://itzsidhan.gitbook.io/itzsidhan/support"/>'
-
-def run():
-    app.run(host="0.0.0.0", port=8080)
-
-def keep_alive():
-    server = Thread(target=run)
-    server.start()
-```
-
-<br>
-
-Run the repl, and copy the web address you see top right corner. And go to [UptimeRobot](https://uptimerobot.com/) and host your web address.
-
-<br>
 
 ### Contact me: 
 
