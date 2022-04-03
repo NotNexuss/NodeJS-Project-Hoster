@@ -12,7 +12,7 @@ const express = require('express')
 const app = express();
 const port = 3000
 
-app.get('/', (req, res) => res.send('This project is being hosted 24/7. ItzNexus#5354'))
+app.get('/', (req, res) => res.send('Please connect me into a hosting website to enable 24/7 hosting. ItzNexus#5354'))
 
 app.listen(port, () =>
 console.log(`Enabled 24/7 Hosting.`)
