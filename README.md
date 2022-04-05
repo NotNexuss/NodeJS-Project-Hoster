@@ -7,7 +7,7 @@ Open your main repl file (example: index.js, app.js, main.js etc...) and leave a
 <br>
 </br>
 
-```
+```js
 const express = require('express')
 const app = express();
 const port = 3000
