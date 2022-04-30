@@ -3,11 +3,18 @@
 <br>
 
 ## Applying
-Open your main repl file (example: index.js, app.js, main.js etc...) and at the top of the code, paste this simple code inside:
+Open your main repl file (example: index.js, app.js, main.js etc...) and at the top and the end of the code, paste this simple code inside:
 
+Top of the code:
 ```js
 const keepAlive = require(`./server`);
 ```
+
+End of the code:
+```js
+keepAlive();
+```
+
 <br>
 </br>
 After that, create a new file named `server.js` and copy paste this code inside the file:
