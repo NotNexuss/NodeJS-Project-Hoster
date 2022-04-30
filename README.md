@@ -3,29 +3,36 @@
 <br>
 
 ## Applying
-Open your main repl file (example: index.js, app.js, main.js etc...) and leave a space at the very top of the file, and paste this code in:
+Open your main repl file (example: index.js, app.js, main.js etc...) and at the top of the code, paste this simple code inside:
+
+```js
+const keepAlive = require(`./server`);
+```
+<br>
+</br>
+After that, create a new file named `server.js` and copy paste this code inside the file:
+
+```js
+const express = require('express');
+const server = express();
+
+server.all(`/`, (req, res) => {
+    res.send(`Please connect me to a hosting website in-order to work 24/7.`);
+});
+
+function keepAlive() {
+    server.listen(3000, () => {
+        console.log(`Creator: ItzNexus`);
+    });
+}
+
+module.exports = keepAlive;
+```
+
 <br>
 </br>
 
-```js
-const express = require('express')
-const app = express();
-const port = 3000
-
-app.get('/', (req, res) => res.send('Please connect me into a hosting website to enable 24/7 hosting. ItzNexus#5354'))
-
-app.listen(port, () =>
-console.log(`Enabled 24/7 Hosting.`)
-);
-```
-
-Now go to the shell, and paste:
-
-```
-npm install express
-```
-
-Run the repl, and copy the web address you see top right corner. And go to [UptimeRobot](https://uptimerobot.com/) and host your web address.
+Finally, connect the web address given at top right corner to a hosting website. I use [freshping](https://app.freshping.io) the most.
 
 <br>
 </br>
